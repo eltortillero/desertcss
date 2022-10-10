@@ -1,0 +1,8 @@
+@mixin create_static_palette($static_color_map) {
+  :root {
+    @each $color_name, $color_value in $static_color_map {
+      $static_color_name: "--sd-" + #{$color_name};
+      #{$static_color_name}: #{$color_value};
+    }
+  }
+}
