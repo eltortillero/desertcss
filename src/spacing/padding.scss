@@ -1,35 +1,107 @@
+@import "../units/units.scss";
 $default_steps: 10;
 @for $i from 1 through $default_steps {
-    .px-#{$i} {
-        padding-left: $i * 2px;
-        padding-right: $i * 2px;
-    }
-    .px-rem-#{$i} {
-        padding-left: $i * 1rem;
-        padding-right: $i * 1rem;
-    }
-    .px-em-#{$i} {
-        padding-left: $i * 1em;
-        padding-right: $i * 1em;
-    }
-    .px-vw-#{$i} {
-        padding-left: $i * 1vw;
-        padding-right: $i * 1vw;
-    }
-    .py-#{$i} {
-        padding-top: $i * 2px;
-        padding-bottom: $i * 2px;
-    }
-    .py-rem-#{$i} {
-        padding-top: $i * 1rem;
-        padding-bottom: $i * 1rem;
-    }
-    .py-em-#{$i} {
-        padding-top: $i * 1em;
-        padding-bottom: $i * 1em;
-    }
-    .py-vw-#{$i} {
-        padding-top: $i * 1vw;
-        padding-bottom: $i * 1vw;
-    }
+  .pt-#{$i} {
+    padding-top: $i * $padding_pixel_base;
+  }
+  .pt-rem-#{$i} {
+    padding-top: $i * $padding_rem_base;
+  }
+  .pt-em-#{$i} {
+    padding-top: $i * $padding_em_base;
+  }
+  .pt-vw-#{$i} {
+    padding-top: $i * $padding_vw_base;
+  }
+  .pt-vh-#{$i} {
+    padding-top: $i * $padding_vh_base;
+  }
+  .pb-#{$i} {
+    padding-bottom: $i * $padding_pixel_base;
+  }
+  .pb-rem-#{$i} {
+    padding-bottom: $i * $padding_rem_base;
+  }
+  .pb-em-#{$i} {
+    padding-bottom: $i * $padding_em_base;
+  }
+  .pb-vw-#{$i} {
+    padding-bottom: $i * $padding_vw_base;
+  }
+  .pb-vh-#{$i} {
+    padding-bottom: $i * $padding_vh_base;
+  }
+  .pl-#{$i} {
+    padding-left: $i * $padding_pixel_base;
+  }
+  .pl-rem-#{$i} {
+    padding-left: $i * $padding_rem_base;
+  }
+  .pl-em-#{$i} {
+    padding-left: $i * $padding_em_base;
+  }
+  .pl-vw-#{$i} {
+    padding-left: $i * $padding_vw_base;
+  }
+  .pl-vh-#{$i} {
+    padding-left: $i * $padding_vh_base;
+  }
+  .pr-#{$i} {
+    padding-left: $i * $padding_pixel_base;
+  }
+  .pr-rem-#{$i} {
+    padding-left: $i * $padding_rem_base;
+  }
+  .pr-em-#{$i} {
+    padding-left: $i * $padding_em_base;
+  }
+  .pr-vw-#{$i} {
+    padding-left: $i * $padding_vw_base;
+  }
+  .pr-vh-#{$i} {
+    padding-left: $i * $padding_vh_base;
+  }
+  .px-#{$i} {
+    padding-left: $i * $padding_pixel_base;
+    padding-right: $i * $padding_pixel_base;
+  }
+  .px-rem-#{$i} {
+    padding-left: $i * $padding_rem_base;
+    padding-right: $i * $padding_rem_base;
+  }
+  .px-em-#{$i} {
+    padding-left: $i * $padding_em_base;
+    padding-right: $i * $padding_em_base;
+  }
+  .px-vw-#{$i} {
+    padding-left: $i * $padding_vw_base;
+    padding-right: $i * $padding_vw_base;
+  }
+  .px-vh-#{$i} {
+    padding-left: $i * $padding_vh_base;
+    padding-right: $i * $padding_vh_base;
+  }
+  .py-#{$i} {
+    padding-top: $i * $padding_pixel_base;
+    padding-bottom: $i * $padding_pixel_base;
+  }
+  .py-rem-#{$i} {
+    padding-top: $i * $padding_rem_base;
+    padding-bottom: $i * $padding_rem_base;
+  }
+  .py-em-#{$i} {
+    padding-top: $i * $padding_em_base;
+    padding-bottom: $i * $padding_em_base;
+  }
+  .py-vw-#{$i} {
+    padding-top: $i * $padding_vw_base;
+    padding-bottom: $i * $padding_vw_base;
+  }
+  .py-vh-#{$i} {
+    padding-top: $i * $padding_vh_base;
+    padding-bottom: $i * $padding_vh_base;
+  }
+  .pf-#{$i} {
+    padding: $i * $padding_pixel_base;
+  }
 }
