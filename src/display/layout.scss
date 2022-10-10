@@ -1,0 +1,29 @@
+@import "../breakpoints/breakpoints.scss", "../units/units.scss";
+
+@each $_, $breakpoint in $breakpoints {
+  @if $breakpoint == 0 {
+    .container {
+      @media (min-width: $smallest) {
+        width: $smallest - $base_rem;
+        padding: $base_rem * .25, $base_rem * .5;
+      }
+      &__no-padding{
+        padding: 0;
+      }
+    }
+  } @else {
+    .container {
+      @media (max-width: $breakpoint) {
+        width: $breakpoint;
+        padding: $base_rem * .25, $base_rem * .5;
+      }
+      &__no-padding{
+        padding: 0;
+      }
+    }
+  }
+}
+
+.wrapper {
+  width: 100%;
+}

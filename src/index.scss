@@ -1,0 +1,4 @@
+@use "./mixins/create_palette.scss" as palette;
+@use "./mixins/create_bg_container.scss" as bg_container;
+@import "./variables/base_palette.scss";
+@include palette.create_palette;

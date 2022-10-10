@@ -1,0 +1,111 @@
+.grid {
+  display: grid;
+  &__align-self--baseline {
+    @extend .grid;
+    align-self: baseline;
+  }
+  &__align-self--center {
+    @extend .grid;
+    align-self: center;
+  }
+  &__align-self--flex-start {
+    @extend .grid;
+    align-self: flex-start;
+  }
+  &__align-self--flex-end {
+    @extend .grid;
+    align-self: flex-end;
+  }
+  &__align-self--stretch {
+    @extend .grid;
+    align-self: stretch;
+  }
+  &__align-self--initial {
+    @extend .grid;
+    align-self: initial;
+  }
+  &__align-self--unset {
+    @extend .grid;
+    align-self: unset;
+  }
+  &__align-self--inherit {
+    @extend .grid;
+    align-self: inherit;
+  }
+  &__justify-self--auto {
+    @extend .grid;
+    justify-self: auto;
+  }
+  &__justify-self--baseline {
+    @extend .grid;
+    justify-self: baseline;
+  }
+  &__justify-self--center {
+    @extend .grid;
+    justify-self: center;
+  }
+  &__justify-self--end {
+    @extend .grid;
+    justify-self: end;
+  }
+  &__justify-self--first_baseline {
+    @extend .grid;
+    justify-self: first baseline;
+  }
+  &__justify-self--flex-end {
+    @extend .grid;
+    justify-self: flex-end;
+  }
+  &__justify-self--flex-start {
+    @extend .grid;
+    justify-self: flex-start;
+  }
+  &__justify-self--last_baseline {
+    @extend .grid;
+    justify-self: last baseline;
+  }
+  &__justify-self--left {
+    @extend .grid;
+    justify-self: left;
+  }
+  &__justify-self--legacy {
+    @extend .grid;
+    justify-self: legacy;
+  }
+  &__justify-self--normal {
+    @extend .grid;
+    justify-self: normal;
+  }
+  &__justify-self--right {
+    @extend .grid;
+    justify-self: right;
+  }
+  &__justify-self--save {
+    @extend .grid;
+    justify-self: save;
+  }
+  &__justify-self--self-end {
+    @extend .grid;
+    justify-self: self-end;
+  }
+  &__justify-self--self-start {
+    @extend .grid;
+    justify-self: self-start;
+  }
+  &__justify-self--start {
+    @extend .grid;
+    justify-self: start;
+  }
+  &__justify-self--strech {
+    @extend .grid;
+    justify-self: stretch;
+  }
+  &__justify-self--initial {
+    @extend .grid;
+    justify-self: initial;
+  }
+  &__justify-self--unset {
+    @extend .grid;
+    justify-self: unset;
+  }
+}

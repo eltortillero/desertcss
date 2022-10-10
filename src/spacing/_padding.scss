@@ -1,0 +1,35 @@
+$default_steps: 10;
+@for $i from 1 through $default_steps {
+    .px-#{$i} {
+        padding-left: $i * 2px;
+        padding-right: $i * 2px;
+    }
+    .px-rem-#{$i} {
+        padding-left: $i * 1rem;
+        padding-right: $i * 1rem;
+    }
+    .px-em-#{$i} {
+        padding-left: $i * 1em;
+        padding-right: $i * 1em;
+    }
+    .px-vw-#{$i} {
+        padding-left: $i * 1vw;
+        padding-right: $i * 1vw;
+    }
+    .py-#{$i} {
+        padding-top: $i * 2px;
+        padding-bottom: $i * 2px;
+    }
+    .py-rem-#{$i} {
+        padding-top: $i * 1rem;
+        padding-bottom: $i * 1rem;
+    }
+    .py-em-#{$i} {
+        padding-top: $i * 1em;
+        padding-bottom: $i * 1em;
+    }
+    .py-vw-#{$i} {
+        padding-top: $i * 1vw;
+        padding-bottom: $i * 1vw;
+    }
+}

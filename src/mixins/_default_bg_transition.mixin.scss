@@ -1,0 +1,4 @@
+@mixin default_background_transistion($color_name, $duration) {
+  background-color: var($color_name);
+  transition: ease $duration;
+}

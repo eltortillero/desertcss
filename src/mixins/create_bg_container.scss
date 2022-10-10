@@ -1,0 +1,22 @@
+@use "../mixins/default_bg_transition.mixin.scss" as default_bg_transition;
+@import "../units/units";
+@mixin create_bg_containers($color_value, $color_name, $segment) {
+  .bg-#{$color_name}-#{$segment} {
+    @include default_bg_transition.default_background_transistion(
+      $color_value,
+      $default_ms
+    );
+    &:hover {
+      @include default_bg_transition.default_background_transistion(
+        $color_value,
+        $default_ms
+      );
+    }
+    &:active {
+      @include default_bg_transition.default_background_transistion(
+        $color_value,
+        $default_ms
+      );
+    }
+  }
+}

@@ -1,0 +1,35 @@
+$default_steps: 10;
+@for $i from 1 through $default_steps {
+    .mx-#{$i} {
+        margin-left: $i * 2px;
+        margin-right: $i * 2px;
+    }
+    .mx-rem-#{$i} {
+        margin-left: $i * 1rem;
+        margin-right: $i * 1rem;
+    }
+    .mx-em-#{$i} {
+        margin-left: $i * 1em;
+        margin-right: $i * 1em;
+    }
+    .mx-vw-#{$i} {
+        margin-left: $i * 1vw;
+        margin-right: $i * 1vw;
+    }
+    .my-#{$i} {
+        margin-top: $i * 2px;
+        margin-bottom: $i * 2px;
+    }
+    .my-rem-#{$i} {
+        margin-top: $i * 1rem;
+        margin-bottom: $i * 1rem;
+    }
+    .my-em-#{$i} {
+        margin-top: $i * 1em;
+        margin-bottom: $i * 1em;
+    }
+    .my-vw-#{$i} {
+        margin-top: $i * 1vw;
+        margin-bottom: $i * 1vw;
+    }
+}

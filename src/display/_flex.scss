@@ -1,0 +1,169 @@
+@use "../mixins/flex.mixins" as flex_mixins;
+.flex {
+  @include flex_mixins.flex;
+  &__justify-content--center {
+    @extend .flex;
+    justify-content: center;
+  }
+  &__justify-content--start {
+    @extend .flex;
+    justify-content: start;
+  }
+  &__justify-content--flex-start {
+    @extend .flex;
+    justify-content: flex-start;
+  }
+  &__justify-content--end {
+    @extend .flex;
+    justify-content: end;
+  }
+  &__justify-content--flex-end {
+    @extend .flex;
+    justify-content: flex-end;
+  }
+  &__justify-content--space-between {
+    @extend .flex;
+    justify-content: space-between;
+  }
+  &__justify-content--space-evenly {
+    @extend .flex;
+    justify-content: space-evenly;
+  }
+  &__justify-content--space-around {
+    @extend .flex;
+    justify-content: space-around;
+  }
+  &__justify-content--space-baseline {
+    @extend .flex;
+    justify-content: baseline;
+  }
+  &__justify-content--first_baseline {
+    @extend .flex;
+    justify-content: first baseline;
+  }
+  &__justify-content--last_baseline {
+    @extend .flex;
+    justify-content: last baseline;
+  }
+  &__justify-content--left {
+    @extend .flex;
+    justify-content: left;
+  }
+  &__justify-content--right {
+    @extend .flex;
+    justify-content: right;
+  }
+  &__justify-content--safe {
+    @extend .flex;
+    justify-content: safe;
+  }
+  &__align-items--baseline {
+    @extend .flex;
+    align-items: baseline;
+  }
+  &__align-items--center {
+    @extend .flex;
+    align-items: center;
+  }
+  &__align-items--flex-start {
+    @extend .flex;
+    align-items: flex-start;
+  }
+  &__align-items--flex-end {
+    @extend .flex;
+    align-items: flex-end;
+  }
+  &__align-items--stretch {
+    @extend .flex;
+    align-items: stretch;
+  }
+  &__align-items--initial {
+    @extend .flex;
+    align-items: initial;
+  }
+  &__align-items--unset {
+    @extend .flex;
+    align-items: unset;
+  }
+  &__align-items--inherit {
+    @extend .flex;
+    align-items: inherit;
+  }
+  &__justify-items--auto {
+    @extend .flex;
+    justify-items: auto;
+  }
+  &__justify-items--baseline {
+    @extend .flex;
+    justify-items: baseline;
+  }
+  &__justify-items--center {
+    @extend .flex;
+    justify-items: center;
+  }
+  &__justify-items--end {
+    @extend .flex;
+    justify-items: end;
+  }
+  &__justify-items--first_baseline {
+    @extend .flex;
+    justify-items: first baseline;
+  }
+  &__justify-items--flex-end {
+    @extend .flex;
+    justify-items: flex-end;
+  }
+  &__justify-items--flex-start {
+    @extend .flex;
+    justify-items: flex-start;
+  }
+  &__justify-items--last_baseline {
+    @extend .flex;
+    justify-items: last baseline;
+  }
+  &__justify-items--left {
+    @extend .flex;
+    justify-items: left;
+  }
+  &__justify-items--legacy {
+    @extend .flex;
+    justify-items: legacy;
+  }
+  &__justify-items--normal {
+    @extend .flex;
+    justify-items: normal;
+  }
+  &__justify-items--right {
+    @extend .flex;
+    justify-items: right;
+  }
+  &__justify-items--save {
+    @extend .flex;
+    justify-items: save;
+  }
+  &__justify-items--self-end {
+    @extend .flex;
+    justify-items: self-end;
+  }
+  &__justify-items--self-start {
+    @extend .flex;
+    justify-items: self-start;
+  }
+  &__justify-items--start {
+    @extend .flex;
+    justify-items: start;
+  }
+  &__justify-items--strech {
+    @extend .flex;
+    justify-items: stretch;
+  }
+  &__justify-items--initial {
+    @extend .flex;
+    justify-items:initial;
+  }
+  &__justify-items--unset {
+    @extend .flex;
+    justify-items:unset;
+  }
+
+}

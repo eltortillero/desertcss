@@ -1,0 +1,60 @@
+@use "./create_bg_container.scss" as bg_container;
+@import "../variables/base_palette.scss";
+// * @deprecated
+@mixin create_palette($color_map: $palettes) {
+  :root {
+    @each $colorname, $palette in $color_map {
+      @each $key, $value in $palette {
+        $keyname: "--ss-color-" + $colorname + "-" + $key;
+        #{$keyname}: #{$value};
+      }
+    }
+  }
+}
+/*
+* $color_map map that contains colors to scale
+* $steps loop steps
+* $convert_ratio scale ratio for color to be lighthen or darken
+*/
+@mixin create_palette(
+  $color_map: $base_palette,
+  $steps: 10,
+  $convert_ratio: 4
+) {
+  :root {
+    @each $color, $value in $color_map {
+      $start_segment: ($steps * 100);
+      $start_color_variable: "--ds-" + (#{$color}) + "-" + #{$start_segment};
+      #{$start_color_variable}: $value;
+      @for $i from 1 to $steps {
+        $segment: (($steps - $i) * 100);
+        $color_variable: "--ds-" + (#{$color})+ "-" + (#{$segment});
+        @if $value == #ffffff {
+          #{$color_variable}: #{darken($value, $i * $convert_ratio)};
+        } @else {
+          #{$color_variable}: #{lighten($value, $i * $convert_ratio)};
+        }
+      }
+    }
+  }
+  body {
+    @each $color, $value in $color_map {
+      $start_segment: ($steps * 100);
+      $start_color_variable: "--ds-" + (#{$color}) + "-" + #{$start_segment};
+      @include bg_container.create_bg_containers(
+        #{$start_color_variable},
+        $color,
+        $start_segment
+      );
+      @for $i from 1 to $steps {
+        $segment: (($steps - $i) * 100);
+        $color_variable: "--ds-" + (#{$color})+ "-" + (#{$segment});
+        @include bg_container.create_bg_containers(
+          #{$color_variable},
+          $color,
+          $segment
+        );
+      }
+    }
+  }
+}
